@@ -1,0 +1,617 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Licoreria Perú</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+</head>
+  <body class="text-bg-light">
+    <!-- cabeza -->
+    <header class="bg-dark text-white">
+        <div class="container py-3">
+            <header class="border-bottom lh-1 py-3">
+                <div class="row flex-nowrap justify-content-between align-items-center">
+                    <div class="col-4 pt-1">
+                        <img src="./imgs/logi.png" class="bi me-2" alt="logo" width="50" height="50" role="img">
+                    </div>
+                    <div class="col-4 text-center">
+                        <h3><a class="blog-header-logo text-white text-decoration-none" href="#">LicorPe</a></h3>
+                    </div>
+                    <div class="col-4 d-flex justify-content-end align-items-center">
+                        <a class="link-light" href="#" aria-label="Search">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
+                        </a>
+                        <a class="btn btn-sm btn-outline-light" href="./carrito.html">Carrito</a>
+                    </div>
+                </div>
+            </header>
+    
+            <div class="nav-scroller py-1 mb-3">
+                <nav class="nav nav-underline justify-content-between">
+                    <a class="nav-item nav-link text-white active" href="./index.html">Inicio</a>
+                    <a class="nav-item nav-link text-white" href="#whisky">Whiskies</a>
+                    <a class="nav-item nav-link text-white" href="#Ron">Rones</a>
+                    <a class="nav-item nav-link text-white" href="#espu">Espumantes</a>
+                    <a class="nav-item nav-link text-white" href="#vinos">Vinos</a>
+                    <a class="nav-item nav-link text-white" href="#tequila">Tequilas</a>
+                    <a class="nav-item nav-link text-white" href="#">Blog</a>
+                    <a class="nav-item nav-link text-white" href="#sobre">Sobre Nosotros</a>
+                </nav>
+            </div>
+        </div>
+    </header>
+    <!-- contenido -->
+    <div class="bd-example m-0 border-0" >
+        <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+          </div>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: First slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#555" dy=".3em">First slide</text></svg>
+            --><img src="./imgs/img01.webp" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1100" height="500" alt="logo" width="70" height="70" role="img" >
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <!-- <svg class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="800" height="400" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Second slide" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#666"/><text x="50%" y="50%" fill="#444" dy=".3em">Second slide</text></svg>
+            --><img src="./imgs/img2.webp" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1100" height="500" alt="logo"role="img" > 
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p></p>
+              </div>
+            </div>
+            <div class="carousel-item">
+                <img src="./imgs/img03.webp" class="bd-placeholder-img bd-placeholder-img-lg d-block w-100" width="1100" height="500" alt="logo" width="70" height="70" role="img" >
+              <div class="carousel-caption d-none d-md-block">
+                <h5></h5>
+                <p></p>
+              </div>
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"  data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>  
+  </div>
+<!-- Productos -->
+<div class="container mt-5" id="whisky">
+    <h2 class="text-center mb-4">Whiskies Recomendados</h2>
+    <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 90.00</div>
+                <img src="./imgs/whiski01.avif" alt="Whisky Johnnie Walker Blue Label">
+                <h5>Whisky JOHNNIE WALKER Blue Label Botella 750ml</h5>
+                <p class="product-price">S/. 950.00 <span class="product-old-price">S/. 1,040.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Whisky Blue Label', 950)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 74.90</div>
+                <img src="./imgs/whiski02.avif" alt="Whisky Glenfiddich 18 años">
+                <h5>Whisky GLENFIDDICH 18 Años Botella 750ml</h5>
+                <p class="product-price">S/. 375.00 <span class="product-old-price">S/. 449.90</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Whisky Glenfiddich',375)">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 50.00</div>
+                <img src="./imgs/whiski03.avif" alt="Whisky Chivas Regal 18 años">
+                <h5>Whisky CHIVAS REGAL 18 Años Botella 700ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 260.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Whisky Chivas', 210)">Añadir al carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/whiski10.avif" alt="Whisky Johnnie Walker Gold Label">
+                <h5>Whisky JOHNNIE WALKER Gold Label Reserve Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Whisky Gold Label', 210)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/whiski05.avif" alt="Whisky Johnnie Walker Gold Label">
+                <h5>Whisky JOHNNIE WALKER Gold Label Reserve Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Whisky Gold Label', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/whiski06.avif" alt="Whisky Johnnie Walker Gold Label">
+                <h5>Whisky JOHNNIE WALKER Gold Label Reserve Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Whisky Gold Label', 210)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/whiski07.avif" alt="Whisky Johnnie Walker Gold Label">
+                <h5>Whisky JOHNNIE WALKER Gold Label Reserve Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Whisky Gold Label', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/whiski09.avif" alt="Whisky Johnnie Walker Gold Label">
+                <h5>Whisky JOHNNIE WALKER Gold Label Reserve Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Whisky Gold Label', 210)">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Producto 02-->
+<div class="container mt-5" id="Ron">
+    <h2 class="text-center mb-4">Rones Recomendados</h2>
+    <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 90.00</div>
+                <img src="./imgs/ron01.avif" alt="Whisky Johnnie Walker Blue Label">
+                <h5>Ron ZACAPA Ámbar Botella 750ml</h5>
+                <p class="product-price">S/. 125.00 <span class="product-old-price">S/. 1,040.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Ron ZACAPA', 125)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 74.90</div>
+                <img src="./imgs/ron02.avif" alt="Whisky Glenfiddich 18 años">
+                <h5>Ron ZACAPA 23 Botella 750ml</h5>
+                <p class="product-price">S/. 188.00 <span class="product-old-price">S/. 449.90</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Ron ZACAPA', 188)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 50.00</div>
+                <img src="./imgs/ron03.avif" alt="Whisky Chivas Regal 18 años">
+                <h5>Ron ZACAPA XO Botella 750ml</h5>
+                <p class="product-price">S/. 445.00 <span class="product-old-price">S/. 260.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Ron ZACAPA', 445)">Añadir Al carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/ron04.avif" alt="Whisky Johnnie Walker Gold Label">
+                <h5>Ron FLOR DE CAÑA 12 Años Botella 750ml</h5>
+                <p class="product-price">S/. 95.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Ron Flor de Caña', 95)">Añadir al Carrito</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/ron05.avif" alt="Whisky Johnnie Walker Gold Label">
+                <h5>Ron FLOR DE CAÑA 7 Años Botella 750ml</h5>
+                <p class="product-price">S/. 72.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Ron Flor de Caña', 72)">Añadir al Carrito</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/ron06.avif" alt="Whisky Johnnie Walker Gold Label">
+                <h5>Ron FLOR DE CAÑA 5 Años Botella 750ml</h5>
+                <p class="product-price">S/. 45.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button"     onclick="addToCart('Ron Flor de Caña', 45)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/ron07.avif" alt="Whisky Johnnie Walker Gold Label">
+                <h5>Ron FLOR DE CAÑA 18 Años Botella 750ml</h5>
+                <p class="product-price">S/. 160.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Ron Flor de Caña', 160)">Añadir al carrito</button>
+            </div>
+        </div>
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/ron08.avif" alt="Whisky Johnnie Walker Gold Label">
+                <h5>Ron HAVANA SELECCION DE MAESTROS Botella 700ml</h5>
+                <p class="product-price">S/. 150.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Ron Havanna', 150)">Añadir al carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+<!--Producto 03-->
+<!-- Espumantes Recomendados -->
+<div class="container mt-5" id="espu">
+    <h2 class="text-center mb-4">Espumantes Recomendados</h2>
+    <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 90.00</div>
+                <img src="./imgs/espuma01.avif" alt="Espumante Producto 1">
+                <h5>Espumante X Botella 750ml</h5>
+                <p class="product-price">S/. 950.00 <span class="product-old-price">S/. 1,040.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Espumante X', 950)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 74.90</div>
+                <img src="./imgs/espuma02.avif" alt="Espumante Producto 2">
+                <h5>Espumante Y Botella 750ml</h5>
+                <p class="product-price">S/. 375.00 <span class="product-old-price">S/. 449.90</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Espumante Y', 375)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 50.00</div>
+                <img src="./imgs/espuma03.avif" alt="Espumante Producto 3">
+                <h5>Espumante Z Botella 700ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 260.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Espumante Z', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/espuma04.avif" alt="Espumante Producto 4">
+                <h5>Espumante W Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Espumante W', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/espuma05.avif" alt="Espumante Producto 5">
+                <h5>Espumante V Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Espumante V', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/espuma06.avif" alt="Espumante Producto 6">
+                <h5>Espumante U Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Espumante U', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/espuma07.avif" alt="Espumante Producto 7">
+                <h5>Espumante T Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Espumante T', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/espuma08.avif" alt="Espumante Producto 8">
+                <h5>Espumante S Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Espumante S', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Producto 04-->
+<div class="container mt-5" id="vinos">
+    <h2 class="text-center mb-4">Vinos Recomendados</h2>
+    <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 90.00</div>
+                <img src="./imgs/vino01.avif" alt="Vino Tinto Reserva Especial">
+                <h5>Vino Tinto Reserva Especial 750ml</h5>
+                <p class="product-price">S/. 150.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Vino Tinto Reserva Especial', 150)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 74.90</div>
+                <img src="./imgs/vino02.avif" alt="Vino Blanco Chardonnay">
+                <h5>Vino Blanco Chardonnay 750ml</h5>
+                <p class="product-price">S/. 180.00 <span class="product-old-price">S/. 254.90</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Vino Blanco Chardonnay', 180)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 50.00</div>
+                <img src="./imgs/vino03.webp" alt="Vino Tinto Malbec">
+                <h5>Vino Tinto Malbec 750ml</h5>
+                <p class="product-price">S/. 220.00 <span class="product-old-price">S/. 270.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Vino Tinto Malbec', 220)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/vino04.avif" alt="Vino Espumante Brut">
+                <h5>Vino Espumante Brut 750ml</h5>
+                <p class="product-price">S/. 160.00 <span class="product-old-price">S/. 190.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Vino Espumante Brut', 160)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/vino05.avif" alt="Vino Tinto Cabernet Sauvignon">
+                <h5>Vino Tinto Cabernet Sauvignon 750ml</h5>
+                <p class="product-price">S/. 140.00 <span class="product-old-price">S/. 170.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Vino Tinto Cabernet Sauvignon', 140)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/vino06.webp" alt="Vino Rosado Tempranillo">
+                <h5>Vino Rosado Tempranillo 750ml</h5>
+                <p class="product-price">S/. 130.00 <span class="product-old-price">S/. 160.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Vino Rosado Tempranillo', 130)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/vino07.avif" alt="Vino Blanco Sauvignon Blanc">
+                <h5>Vino Blanco Sauvignon Blanc 750ml</h5>
+                <p class="product-price">S/. 110.00 <span class="product-old-price">S/. 140.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Vino Blanco Sauvignon Blanc', 110)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/vino08.avif" alt="Vino Tinto Merlot">
+                <h5>Vino Tinto Merlot 750ml</h5>
+                <p class="product-price">S/. 190.00 <span class="product-old-price">S/. 220.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Vino Tinto Merlot', 190)">Añadir al Carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--Producto 04-->
+<div class="container mt-5" id="tequila">
+    <h2 class="text-center mb-4">Tequilas Recomendados</h2>
+    <div class="row">
+        <!-- Producto 1 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 90.00</div>
+                <img src="./imgs/tequila01.avif" alt="Tequila Don Julio 1942">
+                <h5>Tequila Don Julio 1942 Botella 750ml</h5>
+                <p class="product-price">S/. 950.00 <span class="product-old-price">S/. 1,040.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Tequila Don Julio 1942', 950)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 2 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 74.90</div>
+                <img src="./imgs/tequila02.avif" alt="Tequila Herradura Reposado">
+                <h5>Tequila Herradura Reposado Botella 750ml</h5>
+                <p class="product-price">S/. 375.00 <span class="product-old-price">S/. 449.90</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Tequila Herradura Reposado', 375)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 3 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 50.00</div>
+                <img src="./imgs/tequila03.avif" alt="Tequila Patron Silver">
+                <h5>Tequila Patron Silver Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 260.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Tequila Patron Silver', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <!-- Producto 4 -->
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/tequila04.avif" alt="Tequila Casa Dragones">
+                <h5>Tequila Casa Dragones Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Tequila Casa Dragones', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/tequila05.avif" alt="Tequila 1800 Añejo">
+                <h5>Tequila 1800 Añejo Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Tequila 1800 Añejo', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/tequila07.avif" alt="Tequila Clase Azul Reposado">
+                <h5>Tequila Clase Azul Reposado Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Tequila Clase Azul Reposado', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/tequila08.avif" alt="Tequila El Jimador Reposado">
+                <h5>Tequila El Jimador Reposado Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 240.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Tequila El Jimador Reposado', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+
+        <div class="col-md-3">
+            <div class="product-card position-relative">
+                <div class="discount-label">AHORRA S/. 30.00</div>
+                <img src="./imgs/tequila06.avif" alt="Tequila Don Julio Blanco">
+                <h5>Tequila Don Julio Blanco Botella 750ml</h5>
+                <p class="product-price">S/. 210.00 <span class="product-old-price">S/. 250.00</span></p>
+                <button class="btn btn-dark buy-button" onclick="addToCart('Tequila Don Julio Blanco', 210)">Añadir al Carrito</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<main>
+    <div class="container py-4 border-top" id="sobre">
+        <h2 class="text-center mb-4">Sobre Nosotros</h2>
+        <div class="row align-items-md-stretch">
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-bg-dark rounded-3">
+                    <h2>Misión</h2>
+                    <p>En LicorPe, nuestra misión es ser la empresa líder en la distribución de licores premium, ofreciendo productos de alta calidad que satisfacen las expectativas de nuestros clientes. Nos esforzamos por brindar un excelente servicio y asesoría, para que cada compra sea una experiencia única.</p>
+                    <button class="btn btn-outline-light" type="button">Descubre nuestra misión</button>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="h-100 p-5 text-bg-dark border rounded-3">
+                    <h2>Visión</h2>
+                    <p>Nos visualizamos como una empresa innovadora, en constante crecimiento, reconocida por su compromiso con la calidad, la sostenibilidad y la satisfacción del cliente. En LicorPe buscamos ser la opción preferida por los amantes del buen licor a nivel nacional e internacional.</p>
+                    <button class="btn btn-outline-secondary" type="button">Conoce nuestra visión</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+<!--Footter Pie de la pgina-->
+<div class="container">
+    <footer class="py-3 my-4">
+      <ul class="nav justify-content-center border-bottom pb-3 mb-3">
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Inicioo</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Sobre Nosotros</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Contacto</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Preguntas Frecuentes</a></li>
+        <li class="nav-item"><a href="#" class="nav-link px-2 text-body-secondary">Terminos y Condiciones</a></li>
+      </ul>
+      <p class="text-center text-body-secondary">&copy; 2024 LicorPe, Peruano</p>
+    </footer>
+  </div>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <!--Funciones para el carrito de comprasss-->
+  <script>
+
+    function updateCartCount() {
+
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+
+      const cartCount = cartItems.reduce((sum, item) => sum + item.quantity, 0);
+
+      document.getElementById('cart-count').innerText = cartCount;
+
+    }
+
+    document.addEventListener('DOMContentLoaded', function () {
+
+      updateCartCount();
+
+    });
+
+  
+
+    function addToCart(productName, productPrice) {
+      const cartItems = JSON.parse(localStorage.getItem('cartItems')) || [];
+      const existingProductIndex = cartItems.findIndex(item => item.name === productName);
+      if (existingProductIndex > -1) {
+        cartItems[existingProductIndex].quantity++;
+      } else {
+        cartItems.push({
+          name: productName,
+          price: productPrice,
+          quantity: 1
+        });
+      }
+      localStorage.setItem('cartItems', JSON.stringify(cartItems));
+      updateCartCount();
+    }
+
+  </script>
+
+<script>
+function clearCart() {
+      localStorage.removeItem('cartItems');
+      updateCartCount();
+      const cartContainer = document.getElementById('cart-items');
+      cartContainer.innerHTML = '<p>No hay productos en tu carrito.</p>';
+      const carttotal = document.getElementById('total-price');
+      carttotal.innerHTML = '0.00';
+
+    }
+</script>
+</body>
+</html>
